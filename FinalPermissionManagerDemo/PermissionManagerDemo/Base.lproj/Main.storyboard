@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hgv-Ta-Tbp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Permission Manger-->
+        <scene sceneID="R24-8w-CN8">
+            <objects>
+                <viewController storyboardIdentifier="PermissionManagerVC" id="YzC-rz-n7T" customClass="PermissionManagerVC" customModule="PermissionManagerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VmO-ce-BwW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="grP-rd-aS1">
+                                <rect key="frame" x="82" y="388" width="250" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eJ-r7-z4A">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="N6i-qN-CWa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Simple">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="filled" title="Simple Alert">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Pal-kO-M6h" kind="push" id="7Hl-Vu-k4H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1B-Ee-4e4">
+                                        <rect key="frame" x="0.0" y="70" width="250" height="50"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Advance">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="filled" title="Advance">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="QHd-9r-IYp" kind="push" id="euG-4g-OhP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="WI2-5p-O0D"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FaJ-a7-gcT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="grP-rd-aS1" firstAttribute="centerY" secondItem="VmO-ce-BwW" secondAttribute="centerY" id="438-aM-4xT"/>
+                            <constraint firstItem="grP-rd-aS1" firstAttribute="centerX" secondItem="VmO-ce-BwW" secondAttribute="centerX" id="9sc-Yn-Bh4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Permission Manger" id="2iv-6V-Aeh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15x-92-PwS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1713.0434782608697" y="16.741071428571427"/>
+        </scene>
+        <!--All type Of Pemissions-->
+        <scene sceneID="Wtz-dW-nKh">
+            <objects>
+                <viewController storyboardIdentifier="PermissionVC" id="QHd-9r-IYp" customClass="PermissionVC" customModule="PermissionManagerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r7O-J6-kTa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ysh-ex-JVK">
+                                <rect key="frame" x="30" y="112" width="354" height="740"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuZ-LN-hsa">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="56"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Location"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Location"/>
+                                        <connections>
+                                            <action selector="requestLocationPermissionAction:" destination="QHd-9r-IYp" eventType="touchUpInside" id="YPu-Mj-xwK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxt-AS-fuB">
+                                        <rect key="frame" x="0.0" y="76" width="354" height="56"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Contacts"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Contacts"/>
+                                        <connections>
+                                            <action selector="requestContactsPermissionAction:" destination="QHd-9r-IYp" eventType="touchUpInside" id="DJc-ml-skN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S41-Bp-1eO">
+                                        <rect key="frame" x="0.0" y="152" width="354" height="56"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Microphone"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Microphone"/>
+                                        <connections>
+                                            <action selector="requestMicrophonePermissionAction3:" destination="QHd-9r-IYp" eventType="touchUpInside" id="Tr9-x9-JyW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mR-NB-j1W">
+                                        <rect key="frame" x="0.0" y="228" width="354" height="56"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="SpeechRecognition"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="SpeechRecognition"/>
+                                        <connections>
+                                            <action selector="requestSpeechRecognitionPermissionAction4:" destination="QHd-9r-IYp" eventType="touchUpInside" id="6zD-OZ-UHY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZj-Ze-vQH">
+                                        <rect key="frame" x="0.0" y="304" width="354" height="56"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Calendar"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Calendar"/>
+                                        <connections>
+                                            <action selector="requestCalendarPermissionAction5:" destination="QHd-9r-IYp" eventType="touchUpInside" id="OP2-HD-ZP7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uU5-Xs-5HG">
+                                        <rect key="frame" x="0.0" y="380" width="354" height="56"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Reminders"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Reminders"/>
+                                        <connections>
+                                            <action selector="requestRemindersPermissionAction6:" destination="QHd-9r-IYp" eventType="touchUpInside" id="OsR-KQ-8PT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07G-Bp-EZj">
+                                        <rect key="frame" x="0.0" y="456" width="354" height="56"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Camera"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Camera"/>
+                                        <connections>
+                                            <action selector="requestCameraPermissionAction7:" destination="QHd-9r-IYp" eventType="touchUpInside" id="CZ4-fz-mbP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80j-Dw-vFM">
+                                        <rect key="frame" x="0.0" y="532" width="354" height="56"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Photos"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Photos"/>
+                                        <connections>
+                                            <action selector="requestPhotosPermissionAction8:" destination="QHd-9r-IYp" eventType="touchUpInside" id="FKn-7f-mJY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4k-Ea-V3B">
+                                        <rect key="frame" x="0.0" y="608" width="354" height="56"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="AppTracking"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="AppTracking"/>
+                                        <connections>
+                                            <action selector="requestAppTrackingPermissionAction11:" destination="QHd-9r-IYp" eventType="touchUpInside" id="g65-RM-rY4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w40-81-5HJ">
+                                        <rect key="frame" x="0.0" y="684" width="354" height="56"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Local Network"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Local Network"/>
+                                        <connections>
+                                            <action selector="requestlocalNetworkPermissionAction11:" destination="QHd-9r-IYp" eventType="touchUpInside" id="WeB-TG-3GE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Ky-pJ-HVE"/>
+                        <color key="backgroundColor" red="0.98039215800000001" green="0.88627451660000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="3Ky-pJ-HVE" firstAttribute="bottom" secondItem="Ysh-ex-JVK" secondAttribute="bottom" constant="10" id="4gx-nB-2Cr"/>
+                            <constraint firstItem="Ysh-ex-JVK" firstAttribute="leading" secondItem="3Ky-pJ-HVE" secondAttribute="leading" constant="30" id="742-Tt-P9r"/>
+                            <constraint firstItem="3Ky-pJ-HVE" firstAttribute="trailing" secondItem="Ysh-ex-JVK" secondAttribute="trailing" constant="30" id="HVG-6Y-6NN"/>
+                            <constraint firstItem="Ysh-ex-JVK" firstAttribute="top" secondItem="3Ky-pJ-HVE" secondAttribute="top" constant="20" id="nnb-Np-wKH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="All type Of Pemissions" id="kwa-XH-zmy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUz-8K-8HN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852.17391304347836" y="260.49107142857144"/>
+        </scene>
+        <!--Permission DesignVC-->
+        <scene sceneID="WYg-IE-bbB">
+            <objects>
+                <viewController storyboardIdentifier="PermissionDesignVC" id="ieL-wl-i9j" customClass="PermissionDesignVC" customModule="PermissionManagerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zPR-8H-g8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="hov-wl-doS">
+                                <rect key="frame" x="130.5" y="233" width="153" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="TW0-uH-hOv">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" secondItem="hov-wl-doS" secondAttribute="height" multiplier="4:6" id="bQg-ej-Tjz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALLOW CAMERA!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRe-NS-Uic">
+                                <rect key="frame" x="20" y="643" width="374" height="29"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="35"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCI-Rz-yXH">
+                                <rect key="frame" x="20" y="787" width="374" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="v0i-05-taM">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="55"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Allow">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                </variation>
+                                <connections>
+                                    <action selector="allowPermissionAction:" destination="ieL-wl-i9j" eventType="touchUpInside" id="9MG-Uc-sxy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This allows the app to access your camera, so you can take the shot you want, but can’t import images from gallery." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRn-01-aJe">
+                                <rect key="frame" x="20" y="692" width="374" height="70"/>
+                                <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3lJ-0j-OFb"/>
+                        <color key="backgroundColor" red="0.98039215800000001" green="0.88627451660000001" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="BRn-01-aJe" firstAttribute="trailing" secondItem="CCI-Rz-yXH" secondAttribute="trailing" id="4rh-wr-vbb"/>
+                            <constraint firstItem="CCI-Rz-yXH" firstAttribute="top" secondItem="BRn-01-aJe" secondAttribute="bottom" constant="25" id="Ffk-9V-0cu"/>
+                            <constraint firstItem="3lJ-0j-OFb" firstAttribute="trailing" secondItem="CCI-Rz-yXH" secondAttribute="trailing" constant="20" id="I9t-0W-1zL"/>
+                            <constraint firstItem="BRn-01-aJe" firstAttribute="leading" secondItem="CCI-Rz-yXH" secondAttribute="leading" id="KQV-gG-Htb"/>
+                            <constraint firstItem="CCI-Rz-yXH" firstAttribute="leading" secondItem="3lJ-0j-OFb" secondAttribute="leading" constant="20" id="Rc7-EB-8Ea"/>
+                            <constraint firstItem="hov-wl-doS" firstAttribute="centerY" secondItem="zPR-8H-g8Y" secondAttribute="centerY" constant="-100" id="jQK-3F-XC4"/>
+                            <constraint firstItem="BRe-NS-Uic" firstAttribute="leading" secondItem="BRn-01-aJe" secondAttribute="leading" id="k9A-Kh-nap"/>
+                            <constraint firstItem="BRe-NS-Uic" firstAttribute="trailing" secondItem="BRn-01-aJe" secondAttribute="trailing" id="o9F-rf-7Af"/>
+                            <constraint firstItem="hov-wl-doS" firstAttribute="centerX" secondItem="zPR-8H-g8Y" secondAttribute="centerX" id="pX2-xx-ENl"/>
+                            <constraint firstItem="BRn-01-aJe" firstAttribute="top" secondItem="BRe-NS-Uic" secondAttribute="bottom" constant="20" id="pv0-57-T1R"/>
+                            <constraint firstItem="3lJ-0j-OFb" firstAttribute="bottom" secondItem="CCI-Rz-yXH" secondAttribute="bottom" constant="30" id="vLO-vW-1IW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAllow" destination="CCI-Rz-yXH" id="AtL-Zq-JaT"/>
+                        <outlet property="imgPermissionIcon" destination="hov-wl-doS" id="Msd-WV-5Bb"/>
+                        <outlet property="lblAllowDiscription" destination="BRn-01-aJe" id="6Ej-d5-0nM"/>
+                        <outlet property="lblAllowTitle" destination="BRe-NS-Uic" id="pW2-gY-8yy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EZf-UJ-t9V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39.130434782608695" y="16.741071428571427"/>
+        </scene>
+        <!--Simple Alert Pemissions-->
+        <scene sceneID="jFm-Ur-cP5">
+            <objects>
+                <viewController storyboardIdentifier="PermissionVC2" id="Pal-kO-M6h" customClass="PermissionVC2" customModule="PermissionManagerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8KX-Eg-zRH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AKU-Z0-9wX">
+                                <rect key="frame" x="30" y="112" width="354" height="740"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6r-0v-Szp">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="location">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="gray" title="Location ">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="requestLocationPermissionAction:" destination="Pal-kO-M6h" eventType="touchUpInside" id="LJY-NE-Xik"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPP-Yp-aCU">
+                                        <rect key="frame" x="0.0" y="75" width="354" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="contacts">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="gray" title="Contacts">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="requestContactsPermissionAction:" destination="Pal-kO-M6h" eventType="touchUpInside" id="I5j-TN-OHh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yly-j8-amV">
+                                        <rect key="frame" x="0.0" y="150" width="354" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="microphone">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="gray" title="Microphone">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="requestMicrophonePermissionAction3:" destination="Pal-kO-M6h" eventType="touchUpInside" id="IeY-or-0H4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cH-cY-WA7">
+                                        <rect key="frame" x="0.0" y="225" width="354" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="speechRecognition">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="gray" title="SpeechRecognition">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="requestSpeechRecognitionPermissionAction4:" destination="Pal-kO-M6h" eventType="touchUpInside" id="hbQ-5X-dZN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wM-Kf-7AX">
+                                        <rect key="frame" x="0.0" y="300" width="354" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="calendar">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="gray" title="Calendar">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="requestCalendarPermissionAction5:" destination="Pal-kO-M6h" eventType="touchUpInside" id="7KR-O7-Si1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0h-2f-m57">
+                                        <rect key="frame" x="0.0" y="375" width="354" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="reminders">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="gray" title="Reminders">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="requestRemindersPermissionAction6:" destination="Pal-kO-M6h" eventType="touchUpInside" id="xjm-bf-NSi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qu9-1D-fUT">
+                                        <rect key="frame" x="0.0" y="450" width="354" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="camera">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="gray" title="Camera">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="requestCameraPermissionAction7:" destination="Pal-kO-M6h" eventType="touchUpInside" id="EG4-Qz-4Qd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CQ-jQ-lsT">
+                                        <rect key="frame" x="0.0" y="525" width="354" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="photos">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="gray" title="Photos">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="requestPhotosPermissionAction8:" destination="Pal-kO-M6h" eventType="touchUpInside" id="gT5-tP-NTz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRW-CU-eHF">
+                                        <rect key="frame" x="0.0" y="600" width="354" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="appTracking">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="gray" title="AppTracking">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="requestAppTrackingPermissionAction11:" destination="Pal-kO-M6h" eventType="touchUpInside" id="7J8-Xy-6vB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFz-06-reL">
+                                        <rect key="frame" x="0.0" y="675" width="354" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Local Network">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="gray" title="Local Network">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="requestlocalNetworkPermissionAction11:" destination="Pal-kO-M6h" eventType="touchUpInside" id="6pn-gv-7zY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jvt-eH-vs7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jvt-eH-vs7" firstAttribute="trailing" secondItem="AKU-Z0-9wX" secondAttribute="trailing" constant="30" id="67m-F4-pEA"/>
+                            <constraint firstItem="Jvt-eH-vs7" firstAttribute="bottom" secondItem="AKU-Z0-9wX" secondAttribute="bottom" constant="10" id="KWE-sL-Du1"/>
+                            <constraint firstItem="AKU-Z0-9wX" firstAttribute="top" secondItem="Jvt-eH-vs7" secondAttribute="top" constant="20" id="Opg-Bj-mAo"/>
+                            <constraint firstItem="AKU-Z0-9wX" firstAttribute="leading" secondItem="Jvt-eH-vs7" secondAttribute="leading" constant="30" id="t3b-c1-pDq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Simple Alert Pemissions" id="kyZ-8v-k3e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZa-Ba-f11" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852.17391304347836" y="-471.42857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ply-fR-YUt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hgv-Ta-Tbp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eHJ-9h-RdZ">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YzC-rz-n7T" kind="relationship" relationship="rootViewController" id="NVb-bf-9Kq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RcO-0N-GLu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2623.1884057971015" y="16.741071428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
