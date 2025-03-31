@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DateConverterDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Date Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeN-Xv-KYe">
+                                <rect key="frame" x="20" y="256" width="353" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" red="0.8980392157" green="0.92549019610000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wtz-63-brw">
+                                <rect key="frame" x="40" y="311" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDidBeginEditing:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="aPL-YO-GBL"/>
+                                    <action selector="textFieldDidEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="fLK-vr-u1g"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YcZ-gu-XaE">
+                                <rect key="frame" x="40" y="360" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDidBeginEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="CpO-EO-zJi"/>
+                                    <action selector="textFieldDidEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="vdO-Hr-vrY"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jut-OW-fk6">
+                                <rect key="frame" x="40" y="409" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDidBeginEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="eHX-X5-sCg"/>
+                                    <action selector="textFieldDidEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="zUm-Ws-Wz4"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaU-IC-Dyc">
+                                <rect key="frame" x="20" y="468" width="353" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.8980392157" green="0.92549019610000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiN-N5-nBX">
+                                <rect key="frame" x="96.666666666666686" y="658" width="200" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0rP-Dg-gfG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Date to String">
+                                    <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1fe-Be-Q2E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afd-Vt-DI7">
+                                <rect key="frame" x="96.666666666666686" y="708" width="200" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="gwa-NH-4ef"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Compare Dates">
+                                    <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="compareDatesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JCb-cq-Szz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDa-Gn-wpl">
+                                <rect key="frame" x="96.666666666666686" y="608" width="200" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="WHB-CO-qo7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="String to Date">
+                                    <color key="titleColor" systemColor="tableCellPlainBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertStringToDateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eFN-WE-Rr1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsM-VT-Arf">
+                                <rect key="frame" x="20" y="498.33333333333331" width="353" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.8980392157" green="0.92549019610000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVX-Fw-9zh">
+                                <rect key="frame" x="20" y="528.66666666666663" width="353" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.8980392157" green="0.92549019610000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mDa-Gn-wpl" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.0592885" id="04M-GN-pa2"/>
+                            <constraint firstItem="jut-OW-fk6" firstAttribute="trailing" secondItem="Wtz-63-brw" secondAttribute="trailing" id="12U-iP-0BT"/>
+                            <constraint firstItem="oaU-IC-Dyc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4SD-Hr-23i"/>
+                            <constraint firstItem="afd-Vt-DI7" firstAttribute="top" secondItem="xiN-N5-nBX" secondAttribute="bottom" constant="5" id="7gr-rT-fEY"/>
+                            <constraint firstItem="xiN-N5-nBX" firstAttribute="top" secondItem="mDa-Gn-wpl" secondAttribute="bottom" constant="5" id="As3-Vr-RsA"/>
+                            <constraint firstItem="oaU-IC-Dyc" firstAttribute="top" secondItem="jut-OW-fk6" secondAttribute="bottom" constant="25" id="BRB-S0-uap"/>
+                            <constraint firstItem="xiN-N5-nBX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ezc-Fq-kSB"/>
+                            <constraint firstItem="afd-Vt-DI7" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.0592885" id="K21-yC-DwI"/>
+                            <constraint firstItem="SeN-Xv-KYe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="K5a-g7-UOb"/>
+                            <constraint firstItem="xsM-VT-Arf" firstAttribute="trailing" secondItem="oaU-IC-Dyc" secondAttribute="trailing" id="L77-ej-FY9"/>
+                            <constraint firstItem="Wtz-63-brw" firstAttribute="top" secondItem="SeN-Xv-KYe" secondAttribute="bottom" constant="25" id="MDF-RH-Ehp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SeN-Xv-KYe" secondAttribute="trailing" constant="20" id="MpH-wl-6x4"/>
+                            <constraint firstItem="YcZ-gu-XaE" firstAttribute="leading" secondItem="Wtz-63-brw" secondAttribute="leading" id="NIN-BQ-udJ"/>
+                            <constraint firstItem="YcZ-gu-XaE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nen-Bd-8w4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wtz-63-brw" secondAttribute="trailing" constant="40" id="NhB-Dj-MWa"/>
+                            <constraint firstItem="KVX-Fw-9zh" firstAttribute="trailing" secondItem="xsM-VT-Arf" secondAttribute="trailing" id="RUh-fj-KvM"/>
+                            <constraint firstItem="xsM-VT-Arf" firstAttribute="top" secondItem="oaU-IC-Dyc" secondAttribute="bottom" constant="10" id="VJN-y6-tsy"/>
+                            <constraint firstItem="KVX-Fw-9zh" firstAttribute="top" secondItem="xsM-VT-Arf" secondAttribute="bottom" constant="10" id="XIJ-dp-L6C"/>
+                            <constraint firstItem="oaU-IC-Dyc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YzB-z7-VuR"/>
+                            <constraint firstItem="Wtz-63-brw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bIj-3C-pH4"/>
+                            <constraint firstItem="YcZ-gu-XaE" firstAttribute="trailing" secondItem="Wtz-63-brw" secondAttribute="trailing" id="cLe-PS-Osx"/>
+                            <constraint firstItem="jut-OW-fk6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eAj-wc-IVD"/>
+                            <constraint firstItem="jut-OW-fk6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eYD-hF-86y"/>
+                            <constraint firstItem="xiN-N5-nBX" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.0395257" constant="15" id="fVX-od-DRv"/>
+                            <constraint firstItem="Wtz-63-brw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iAr-oj-QV4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oaU-IC-Dyc" secondAttribute="trailing" constant="20" id="if1-ab-fL1"/>
+                            <constraint firstItem="mDa-Gn-wpl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jXZ-SG-dal"/>
+                            <constraint firstItem="xsM-VT-Arf" firstAttribute="leading" secondItem="oaU-IC-Dyc" secondAttribute="leading" id="lKi-32-YCt"/>
+                            <constraint firstItem="KVX-Fw-9zh" firstAttribute="leading" secondItem="xsM-VT-Arf" secondAttribute="leading" id="nCW-HI-osS"/>
+                            <constraint firstItem="oaU-IC-Dyc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p5h-2C-Ipf"/>
+                            <constraint firstItem="afd-Vt-DI7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q6H-5w-qgL"/>
+                            <constraint firstItem="YcZ-gu-XaE" firstAttribute="top" secondItem="Wtz-63-brw" secondAttribute="bottom" constant="15" id="vuo-n8-ruh"/>
+                            <constraint firstItem="jut-OW-fk6" firstAttribute="top" secondItem="YcZ-gu-XaE" secondAttribute="bottom" constant="15" id="x07-zJ-qPa"/>
+                            <constraint firstItem="Wtz-63-brw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="x1v-FL-z3n"/>
+                            <constraint firstItem="jut-OW-fk6" firstAttribute="leading" secondItem="Wtz-63-brw" secondAttribute="leading" id="xBd-nM-ApJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="afd-Vt-DI7" secondAttribute="bottom" constant="65" id="xaU-G0-E4c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCompare" destination="afd-Vt-DI7" id="feH-rC-TOt"/>
+                        <outlet property="btnDTS" destination="xiN-N5-nBX" id="pB9-wn-jQZ"/>
+                        <outlet property="btnSTD" destination="mDa-Gn-wpl" id="dUz-Pd-EJe"/>
+                        <outlet property="comparisonResultLabel" destination="xsM-VT-Arf" id="lsp-bx-Dgr"/>
+                        <outlet property="dateTextField" destination="Wtz-63-brw" id="vhQ-F4-InU"/>
+                        <outlet property="dateTextField2" destination="YcZ-gu-XaE" id="aHp-Nx-IFM"/>
+                        <outlet property="dateTextField3" destination="jut-OW-fk6" id="HGJ-5a-jYc"/>
+                        <outlet property="lblTimeInterval" destination="KVX-Fw-9zh" id="wX6-7O-yGv"/>
+                        <outlet property="resultLabel" destination="oaU-IC-Dyc" id="iX1-bv-7Uy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tableCellPlainBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

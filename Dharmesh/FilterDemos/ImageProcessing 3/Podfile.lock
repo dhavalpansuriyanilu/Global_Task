@@ -1,0 +1,20 @@
+PODS:
+  - AdvancedActionSheet (1.0.6)
+  - GPUImage (0.1.7)
+
+DEPENDENCIES:
+  - AdvancedActionSheet
+  - GPUImage
+
+SPEC REPOS:
+  trunk:
+    - AdvancedActionSheet
+    - GPUImage
+
+SPEC CHECKSUMS:
+  AdvancedActionSheet: 96b06ae31233655dabd69067e3246a2acbf24781
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+
+PODFILE CHECKSUM: 32b678c4947b5db91392a370ff86747fe806139f
+
+COCOAPODS: 1.13.0

@@ -1,0 +1,20 @@
+PODS:
+  - BSImagePicker (3.3.2)
+  - lottie-ios (4.4.3)
+
+DEPENDENCIES:
+  - BSImagePicker (~> 3.1)
+  - lottie-ios
+
+SPEC REPOS:
+  trunk:
+    - BSImagePicker
+    - lottie-ios
+
+SPEC CHECKSUMS:
+  BSImagePicker: 568ba98dcd066fb10f85dc84e3f8385881bdd1f8
+  lottie-ios: fcb5e73e17ba4c983140b7d21095c834b3087418
+
+PODFILE CHECKSUM: 47b9f8c9b57ec0de31af08ffae956b0c150643cd
+
+COCOAPODS: 1.15.2

@@ -1,0 +1,6 @@
+framework module AdvancedActionSheet {
+  umbrella header "AdvancedActionSheet-umbrella.h"
+
+  export *
+  module * { export * }
+}

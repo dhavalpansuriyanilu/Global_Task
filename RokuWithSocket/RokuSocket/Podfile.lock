@@ -1,0 +1,18 @@
+PODS:
+  - XMLMapper (2.0.0):
+    - XMLMapper/Core (= 2.0.0)
+  - XMLMapper/Core (2.0.0)
+
+DEPENDENCIES:
+  - XMLMapper
+
+SPEC REPOS:
+  trunk:
+    - XMLMapper
+
+SPEC CHECKSUMS:
+  XMLMapper: 45ff16367092620b0b4adbc5e42dd8db6ebb5e0d
+
+PODFILE CHECKSUM: 882e717c3c040251c33806c650ad1c4d875a3b63
+
+COCOAPODS: 1.16.2

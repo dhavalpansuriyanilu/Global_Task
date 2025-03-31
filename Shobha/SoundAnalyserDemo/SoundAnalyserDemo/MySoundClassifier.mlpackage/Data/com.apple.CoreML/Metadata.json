@@ -1,0 +1,13 @@
+{
+  "MLModelVersionStringKey" : "--",
+  "MLModelDescriptionKey" : "--",
+  "MLModelCreatorDefinedKey" : {
+    "com.apple.createml.version" : "14.2.1",
+    "com.apple.createml.app.tag" : "121.4",
+    "com.apple.coreml.model.preview.type" : "soundClassifier",
+    "sampleRate" : "16000",
+    "com.apple.createml.app.version" : "5.0"
+  },
+  "MLModelAuthorKey" : "MacBook_Air_41",
+  "MLModelLicenseKey" : "--"
+}

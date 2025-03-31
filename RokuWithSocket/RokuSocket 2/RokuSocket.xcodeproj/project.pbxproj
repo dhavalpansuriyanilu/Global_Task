@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E9C87C22D65A3F800C19A60 /* RokuWebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C87C12D65A3EF00C19A60 /* RokuWebSocketManager.swift */; };
+		6E9C87C42D65D33500C19A60 /* AppsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C87C32D65D33500C19A60 /* AppsListVC.swift */; };
+		6EF3C6E02D66F46900FD29A7 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6BF2D66F46900FD29A7 /* Compression.swift */; };
+		6EF3C6E12D66F46900FD29A7 /* WSCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6C02D66F46900FD29A7 /* WSCompression.swift */; };
+		6EF3C6E22D66F46900FD29A7 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6C22D66F46900FD29A7 /* Data+Extensions.swift */; };
+		6EF3C6E32D66F46900FD29A7 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6C42D66F46900FD29A7 /* Engine.swift */; };
+		6EF3C6E42D66F46900FD29A7 /* NativeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6C52D66F46900FD29A7 /* NativeEngine.swift */; };
+		6EF3C6E52D66F46900FD29A7 /* WSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6C62D66F46900FD29A7 /* WSEngine.swift */; };
+		6EF3C6E62D66F46900FD29A7 /* FoundationHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6C82D66F46900FD29A7 /* FoundationHTTPHandler.swift */; };
+		6EF3C6E72D66F46900FD29A7 /* FoundationHTTPServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6C92D66F46900FD29A7 /* FoundationHTTPServerHandler.swift */; };
+		6EF3C6E82D66F46900FD29A7 /* FrameCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6CA2D66F46900FD29A7 /* FrameCollector.swift */; };
+		6EF3C6E92D66F46900FD29A7 /* Framer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6CB2D66F46900FD29A7 /* Framer.swift */; };
+		6EF3C6EA2D66F46900FD29A7 /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6CC2D66F46900FD29A7 /* HTTPHandler.swift */; };
+		6EF3C6EB2D66F46900FD29A7 /* StringHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6CD2D66F46900FD29A7 /* StringHTTPHandler.swift */; };
+		6EF3C6EC2D66F46900FD29A7 /* FoundationSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6CF2D66F46900FD29A7 /* FoundationSecurity.swift */; };
+		6EF3C6ED2D66F46900FD29A7 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6D02D66F46900FD29A7 /* Security.swift */; };
+		6EF3C6EE2D66F46900FD29A7 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6D22D66F46900FD29A7 /* Server.swift */; };
+		6EF3C6EF2D66F46900FD29A7 /* WebSocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6D32D66F46900FD29A7 /* WebSocketServer.swift */; };
+		6EF3C6F02D66F46900FD29A7 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6D52D66F46900FD29A7 /* WebSocket.swift */; };
+		6EF3C6F12D66F46900FD29A7 /* FoundationTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6D72D66F46900FD29A7 /* FoundationTransport.swift */; };
+		6EF3C6F22D66F46900FD29A7 /* TCPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6D82D66F46900FD29A7 /* TCPTransport.swift */; };
+		6EF3C6F32D66F46900FD29A7 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C6D92D66F46900FD29A7 /* Transport.swift */; };
+		6EF3C6F42D66F46900FD29A7 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 6EF3C6DB2D66F46900FD29A7 /* PrivacyInfo.xcprivacy */; };
+		6EF3C6F52D66F46900FD29A7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6EF3C6DD2D66F46900FD29A7 /* LICENSE */; };
+		6EF3C6F62D66F46900FD29A7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6EF3C6DE2D66F46900FD29A7 /* README.md */; };
+		6EF97C332D6487F50010F8CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF97C292D6487F50010F8CF /* AppDelegate.swift */; };
+		6EF97C342D6487F50010F8CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF97C302D6487F50010F8CF /* SceneDelegate.swift */; };
+		6EF97C352D6487F50010F8CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF97C312D6487F50010F8CF /* ViewController.swift */; };
+		6EF97C362D6487F50010F8CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EF97C2A2D6487F50010F8CF /* Assets.xcassets */; };
+		6EF97C382D6487F50010F8CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EF97C2D2D6487F50010F8CF /* LaunchScreen.storyboard */; };
+		6EF97C392D6487F50010F8CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EF97C2F2D6487F50010F8CF /* Main.storyboard */; };
+		AD9BBB3A25BE65DE520169E7 /* Pods_RokuSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886CF425CD67CEC92813302D /* Pods_RokuSocket.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B59757DFEF63442B9DC6C8D /* Pods-RokuSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuSocket.release.xcconfig"; path = "Target Support Files/Pods-RokuSocket/Pods-RokuSocket.release.xcconfig"; sourceTree = "<group>"; };
+		2603ABE9FC8F3D3CF138750D /* Pods-RokuSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RokuSocket.debug.xcconfig"; path = "Target Support Files/Pods-RokuSocket/Pods-RokuSocket.debug.xcconfig"; sourceTree = "<group>"; };
+		6E9C87C12D65A3EF00C19A60 /* RokuWebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RokuWebSocketManager.swift; sourceTree = "<group>"; };
+		6E9C87C32D65D33500C19A60 /* AppsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsListVC.swift; sourceTree = "<group>"; };
+		6EF3C6BF2D66F46900FD29A7 /* Compression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compression.swift; sourceTree = "<group>"; };
+		6EF3C6C02D66F46900FD29A7 /* WSCompression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCompression.swift; sourceTree = "<group>"; };
+		6EF3C6C22D66F46900FD29A7 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		6EF3C6C42D66F46900FD29A7 /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		6EF3C6C52D66F46900FD29A7 /* NativeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeEngine.swift; sourceTree = "<group>"; };
+		6EF3C6C62D66F46900FD29A7 /* WSEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSEngine.swift; sourceTree = "<group>"; };
+		6EF3C6C82D66F46900FD29A7 /* FoundationHTTPHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationHTTPHandler.swift; sourceTree = "<group>"; };
+		6EF3C6C92D66F46900FD29A7 /* FoundationHTTPServerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationHTTPServerHandler.swift; sourceTree = "<group>"; };
+		6EF3C6CA2D66F46900FD29A7 /* FrameCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameCollector.swift; sourceTree = "<group>"; };
+		6EF3C6CB2D66F46900FD29A7 /* Framer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framer.swift; sourceTree = "<group>"; };
+		6EF3C6CC2D66F46900FD29A7 /* HTTPHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHandler.swift; sourceTree = "<group>"; };
+		6EF3C6CD2D66F46900FD29A7 /* StringHTTPHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHTTPHandler.swift; sourceTree = "<group>"; };
+		6EF3C6CF2D66F46900FD29A7 /* FoundationSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationSecurity.swift; sourceTree = "<group>"; };
+		6EF3C6D02D66F46900FD29A7 /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
+		6EF3C6D22D66F46900FD29A7 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		6EF3C6D32D66F46900FD29A7 /* WebSocketServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketServer.swift; sourceTree = "<group>"; };
+		6EF3C6D52D66F46900FD29A7 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		6EF3C6D72D66F46900FD29A7 /* FoundationTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationTransport.swift; sourceTree = "<group>"; };
+		6EF3C6D82D66F46900FD29A7 /* TCPTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPTransport.swift; sourceTree = "<group>"; };
+		6EF3C6D92D66F46900FD29A7 /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
+		6EF3C6DB2D66F46900FD29A7 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		6EF3C6DD2D66F46900FD29A7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6EF3C6DE2D66F46900FD29A7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6EF97C0E2D6484080010F8CF /* RokuSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RokuSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EF97C292D6487F50010F8CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6EF97C2A2D6487F50010F8CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6EF97C2B2D6487F50010F8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EF97C2C2D6487F50010F8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6EF97C2E2D6487F50010F8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6EF97C302D6487F50010F8CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6EF97C312D6487F50010F8CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		886CF425CD67CEC92813302D /* Pods_RokuSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RokuSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EF97C0B2D6484080010F8CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9BBB3A25BE65DE520169E7 /* Pods_RokuSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AACAF53EDD60D50AC4DF70F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				886CF425CD67CEC92813302D /* Pods_RokuSocket.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EF3C6C12D66F46900FD29A7 /* Compression */ = {
+			isa = PBXGroup;
+			children = (
+				6EF3C6BF2D66F46900FD29A7 /* Compression.swift */,
+				6EF3C6C02D66F46900FD29A7 /* WSCompression.swift */,
+			);
+			path = Compression;
+			sourceTree = "<group>";
+		};
+		6EF3C6C32D66F46900FD29A7 /* DataBytes */ = {
+			isa = PBXGroup;
+			children = (
+				6EF3C6C22D66F46900FD29A7 /* Data+Extensions.swift */,
+			);
+			path = DataBytes;
+			sourceTree = "<group>";
+		};
+		6EF3C6C72D66F46900FD29A7 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				6EF3C6C42D66F46900FD29A7 /* Engine.swift */,
+				6EF3C6C52D66F46900FD29A7 /* NativeEngine.swift */,
+				6EF3C6C62D66F46900FD29A7 /* WSEngine.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		6EF3C6CE2D66F46900FD29A7 /* Framer */ = {
+			isa = PBXGroup;
+			children = (
+				6EF3C6C82D66F46900FD29A7 /* FoundationHTTPHandler.swift */,
+				6EF3C6C92D66F46900FD29A7 /* FoundationHTTPServerHandler.swift */,
+				6EF3C6CA2D66F46900FD29A7 /* FrameCollector.swift */,
+				6EF3C6CB2D66F46900FD29A7 /* Framer.swift */,
+				6EF3C6CC2D66F46900FD29A7 /* HTTPHandler.swift */,
+				6EF3C6CD2D66F46900FD29A7 /* StringHTTPHandler.swift */,
+			);
+			path = Framer;
+			sourceTree = "<group>";
+		};
+		6EF3C6D12D66F46900FD29A7 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				6EF3C6CF2D66F46900FD29A7 /* FoundationSecurity.swift */,
+				6EF3C6D02D66F46900FD29A7 /* Security.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		6EF3C6D42D66F46900FD29A7 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				6EF3C6D22D66F46900FD29A7 /* Server.swift */,
+				6EF3C6D32D66F46900FD29A7 /* WebSocketServer.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		6EF3C6D62D66F46900FD29A7 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				6EF3C6D52D66F46900FD29A7 /* WebSocket.swift */,
+			);
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		6EF3C6DA2D66F46900FD29A7 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				6EF3C6D72D66F46900FD29A7 /* FoundationTransport.swift */,
+				6EF3C6D82D66F46900FD29A7 /* TCPTransport.swift */,
+				6EF3C6D92D66F46900FD29A7 /* Transport.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		6EF3C6DC2D66F46900FD29A7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6EF3C6C12D66F46900FD29A7 /* Compression */,
+				6EF3C6C32D66F46900FD29A7 /* DataBytes */,
+				6EF3C6C72D66F46900FD29A7 /* Engine */,
+				6EF3C6CE2D66F46900FD29A7 /* Framer */,
+				6EF3C6D12D66F46900FD29A7 /* Security */,
+				6EF3C6D42D66F46900FD29A7 /* Server */,
+				6EF3C6D62D66F46900FD29A7 /* Starscream */,
+				6EF3C6DA2D66F46900FD29A7 /* Transport */,
+				6EF3C6DB2D66F46900FD29A7 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6EF3C6DF2D66F46900FD29A7 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				6EF3C6DC2D66F46900FD29A7 /* Sources */,
+				6EF3C6DD2D66F46900FD29A7 /* LICENSE */,
+				6EF3C6DE2D66F46900FD29A7 /* README.md */,
+			);
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		6EF97C052D6484080010F8CF = {
+			isa = PBXGroup;
+			children = (
+				6EF97C322D6487F50010F8CF /* RokuSocket */,
+				6EF97C0F2D6484080010F8CF /* Products */,
+				ECFDEFDE8A3BD43016C4A7DB /* Pods */,
+				2AACAF53EDD60D50AC4DF70F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6EF97C0F2D6484080010F8CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EF97C0E2D6484080010F8CF /* RokuSocket.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EF97C322D6487F50010F8CF /* RokuSocket */ = {
+			isa = PBXGroup;
+			children = (
+				6EF3C6DF2D66F46900FD29A7 /* Starscream */,
+				6E9C87C12D65A3EF00C19A60 /* RokuWebSocketManager.swift */,
+				6EF97C292D6487F50010F8CF /* AppDelegate.swift */,
+				6EF97C2A2D6487F50010F8CF /* Assets.xcassets */,
+				6EF97C2B2D6487F50010F8CF /* Info.plist */,
+				6EF97C2D2D6487F50010F8CF /* LaunchScreen.storyboard */,
+				6EF97C2F2D6487F50010F8CF /* Main.storyboard */,
+				6EF97C302D6487F50010F8CF /* SceneDelegate.swift */,
+				6EF97C312D6487F50010F8CF /* ViewController.swift */,
+				6E9C87C32D65D33500C19A60 /* AppsListVC.swift */,
+			);
+			path = RokuSocket;
+			sourceTree = "<group>";
+		};
+		ECFDEFDE8A3BD43016C4A7DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2603ABE9FC8F3D3CF138750D /* Pods-RokuSocket.debug.xcconfig */,
+				0B59757DFEF63442B9DC6C8D /* Pods-RokuSocket.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EF97C0D2D6484080010F8CF /* RokuSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EF97C212D64840A0010F8CF /* Build configuration list for PBXNativeTarget "RokuSocket" */;
+			buildPhases = (
+				C6AADC18A51E796EFF61472A /* [CP] Check Pods Manifest.lock */,
+				6EF97C0A2D6484080010F8CF /* Sources */,
+				6EF97C0B2D6484080010F8CF /* Frameworks */,
+				6EF97C0C2D6484080010F8CF /* Resources */,
+				CD5B7F6B7876E1A3F9D641FE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RokuSocket;
+			packageProductDependencies = (
+			);
+			productName = RokuSocket;
+			productReference = 6EF97C0E2D6484080010F8CF /* RokuSocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EF97C062D6484080010F8CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					6EF97C0D2D6484080010F8CF = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 6EF97C092D6484080010F8CF /* Build configuration list for PBXProject "RokuSocket" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EF97C052D6484080010F8CF;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6EF97C0F2D6484080010F8CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EF97C0D2D6484080010F8CF /* RokuSocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EF97C0C2D6484080010F8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF97C362D6487F50010F8CF /* Assets.xcassets in Resources */,
+				6EF97C382D6487F50010F8CF /* LaunchScreen.storyboard in Resources */,
+				6EF3C6F42D66F46900FD29A7 /* PrivacyInfo.xcprivacy in Resources */,
+				6EF3C6F52D66F46900FD29A7 /* LICENSE in Resources */,
+				6EF3C6F62D66F46900FD29A7 /* README.md in Resources */,
+				6EF97C392D6487F50010F8CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C6AADC18A51E796EFF61472A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RokuSocket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD5B7F6B7876E1A3F9D641FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RokuSocket/Pods-RokuSocket-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RokuSocket/Pods-RokuSocket-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RokuSocket/Pods-RokuSocket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EF97C0A2D6484080010F8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9C87C42D65D33500C19A60 /* AppsListVC.swift in Sources */,
+				6E9C87C22D65A3F800C19A60 /* RokuWebSocketManager.swift in Sources */,
+				6EF97C332D6487F50010F8CF /* AppDelegate.swift in Sources */,
+				6EF97C342D6487F50010F8CF /* SceneDelegate.swift in Sources */,
+				6EF3C6E02D66F46900FD29A7 /* Compression.swift in Sources */,
+				6EF3C6E12D66F46900FD29A7 /* WSCompression.swift in Sources */,
+				6EF3C6E22D66F46900FD29A7 /* Data+Extensions.swift in Sources */,
+				6EF3C6E32D66F46900FD29A7 /* Engine.swift in Sources */,
+				6EF3C6E42D66F46900FD29A7 /* NativeEngine.swift in Sources */,
+				6EF3C6E52D66F46900FD29A7 /* WSEngine.swift in Sources */,
+				6EF3C6E62D66F46900FD29A7 /* FoundationHTTPHandler.swift in Sources */,
+				6EF3C6E72D66F46900FD29A7 /* FoundationHTTPServerHandler.swift in Sources */,
+				6EF3C6E82D66F46900FD29A7 /* FrameCollector.swift in Sources */,
+				6EF3C6E92D66F46900FD29A7 /* Framer.swift in Sources */,
+				6EF3C6EA2D66F46900FD29A7 /* HTTPHandler.swift in Sources */,
+				6EF3C6EB2D66F46900FD29A7 /* StringHTTPHandler.swift in Sources */,
+				6EF3C6EC2D66F46900FD29A7 /* FoundationSecurity.swift in Sources */,
+				6EF3C6ED2D66F46900FD29A7 /* Security.swift in Sources */,
+				6EF3C6EE2D66F46900FD29A7 /* Server.swift in Sources */,
+				6EF3C6EF2D66F46900FD29A7 /* WebSocketServer.swift in Sources */,
+				6EF3C6F02D66F46900FD29A7 /* WebSocket.swift in Sources */,
+				6EF3C6F12D66F46900FD29A7 /* FoundationTransport.swift in Sources */,
+				6EF3C6F22D66F46900FD29A7 /* TCPTransport.swift in Sources */,
+				6EF3C6F32D66F46900FD29A7 /* Transport.swift in Sources */,
+				6EF97C352D6487F50010F8CF /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6EF97C2D2D6487F50010F8CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EF97C2C2D6487F50010F8CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6EF97C2F2D6487F50010F8CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EF97C2E2D6487F50010F8CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EF97C222D64840A0010F8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2603ABE9FC8F3D3CF138750D /* Pods-RokuSocket.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43LQ7M32DU;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RokuSocket/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.sachin01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EF97C232D64840A0010F8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B59757DFEF63442B9DC6C8D /* Pods-RokuSocket.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43LQ7M32DU;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RokuSocket/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.sachin01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6EF97C242D64840A0010F8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6EF97C252D64840A0010F8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EF97C092D6484080010F8CF /* Build configuration list for PBXProject "RokuSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EF97C242D64840A0010F8CF /* Debug */,
+				6EF97C252D64840A0010F8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EF97C212D64840A0010F8CF /* Build configuration list for PBXNativeTarget "RokuSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EF97C222D64840A0010F8CF /* Debug */,
+				6EF97C232D64840A0010F8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EF97C062D6484080010F8CF /* Project object */;
+}
