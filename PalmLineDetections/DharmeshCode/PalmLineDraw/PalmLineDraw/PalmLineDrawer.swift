@@ -6,7 +6,7 @@ class PalmLineDrawer{
     static var shared = PalmLineDrawer()
     
     func uploadImageToAPI(image: UIImage, completion: @escaping ([String: Any]?, UIImage?) -> Void) {
-        guard let url = URL(string: "http://192.168.29.82:8000/predict/") else {
+        guard let url = URL(string: "http://192.168.29.148:8000/predict/") else {
             print("Invalid URL")
             completion(nil, nil)
             return

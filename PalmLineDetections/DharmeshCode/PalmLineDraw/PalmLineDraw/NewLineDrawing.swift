@@ -227,10 +227,10 @@ extension NewLineDrawing {
             let backgroundRemoval = BackgroundRemoval()
             do {
                 // Background removal
-                let image = try backgroundRemoval.removeBackground(image: resizeImageKeepingAspectRatio(image: selectedImage)!)
-                imageViews.image = image
+//                let image = try backgroundRemoval.removeBackground(image: resizeImageKeepingAspectRatio(image: selectedImage)!)
+                imageViews.image = selectedImage
                 zoomImage()
-                getImageLinePoints(image: image)
+                getImageLinePoints(image: selectedImage)
             }catch {
                 print(error)
             }
@@ -305,14 +305,14 @@ extension NewLineDrawing {
                         
                         self.currentIndex = 0
                         self.drawNextLine()
-
+                        
                         print(self.lines)
                     }
                 }
             }
         }
     }
-
+    
     private func clearPreviousLines() {
         for layer in shapeLayers {
             layer.removeFromSuperlayer()
@@ -326,8 +326,6 @@ extension NewLineDrawing {
         lines.removeAll()
         currentIndex = 0
     }
-
-    
-   
-
 }
+
+
