@@ -1,0 +1,16 @@
+PODS:
+  - AppLovinSDK (13.3.1)
+
+DEPENDENCIES:
+  - AppLovinSDK
+
+SPEC REPOS:
+  trunk:
+    - AppLovinSDK
+
+SPEC CHECKSUMS:
+  AppLovinSDK: 5075837afdee4fb429121799b8cbcc5918ef3a23
+
+PODFILE CHECKSUM: 1dd6a0b79cbaa3dba5b8365f792c0aa4fae4a715
+
+COCOAPODS: 1.16.2
