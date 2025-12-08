@@ -1,0 +1,15 @@
+{
+  "originHash" : "7917afc9507dd79b96ceba7d1fc87727420d93d612a3b2664b2f6c181a81db54",
+  "pins" : [
+    {
+      "identity" : "gcxmulticastdnskit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/grandcentrix/GCXMulticastDNSKit",
+      "state" : {
+        "branch" : "master",
+        "revision" : "85185cb9c0e6deee41b936de9f620a806031f698"
+      }
+    }
+  ],
+  "version" : 3
+}
