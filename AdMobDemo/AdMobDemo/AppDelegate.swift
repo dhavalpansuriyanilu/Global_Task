@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  IronSourceDemo
+//  AdMobDemo
 //
-//  Created by 29_MackbookAir on 25/11/25.
+//  Created by 29_MackbookAir on 20/01/26.
 //
 
 import UIKit

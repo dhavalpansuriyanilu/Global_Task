@@ -1,3 +1,9 @@
+//
+//  SceneDelegate.swift
+//  AdMobDemo
+//
+//  Created by 29_MackbookAir on 20/01/26.
+//
 
 import UIKit
 

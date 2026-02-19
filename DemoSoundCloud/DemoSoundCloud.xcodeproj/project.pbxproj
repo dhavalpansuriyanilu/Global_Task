@@ -6,146 +6,119 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		A7A2E853398DE75839F915AD /* Pods_IronSourceDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE57B68A59D320A1576369FF /* Pods_IronSourceDemo.framework */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		6E62FF322ED5757A00208E5A /* IronSourceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IronSourceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		94590F8252139A0026C27A04 /* Pods-IronSourceDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronSourceDemo.debug.xcconfig"; path = "Target Support Files/Pods-IronSourceDemo/Pods-IronSourceDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		B7DCA9F543ECDA91D2E102F1 /* Pods-IronSourceDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronSourceDemo.release.xcconfig"; path = "Target Support Files/Pods-IronSourceDemo/Pods-IronSourceDemo.release.xcconfig"; sourceTree = "<group>"; };
-		CE57B68A59D320A1576369FF /* Pods_IronSourceDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IronSourceDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E72FC7E2F2B56F00048A100 /* DemoSoundCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSoundCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		6E62FF442ED5757B00208E5A /* Exceptions for "IronSourceDemo" folder in "IronSourceDemo" target */ = {
+		6E72FC902F2B56F20048A100 /* Exceptions for "DemoSoundCloud" folder in "DemoSoundCloud" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 6E62FF312ED5757A00208E5A /* IronSourceDemo */;
+			target = 6E72FC7D2F2B56F00048A100 /* DemoSoundCloud */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6E62FF342ED5757A00208E5A /* IronSourceDemo */ = {
+		6E72FC802F2B56F00048A100 /* DemoSoundCloud */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				6E62FF442ED5757B00208E5A /* Exceptions for "IronSourceDemo" folder in "IronSourceDemo" target */,
+				6E72FC902F2B56F20048A100 /* Exceptions for "DemoSoundCloud" folder in "DemoSoundCloud" target */,
 			);
-			path = IronSourceDemo;
+			path = DemoSoundCloud;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6E62FF2F2ED5757A00208E5A /* Frameworks */ = {
+		6E72FC7B2F2B56F00048A100 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7A2E853398DE75839F915AD /* Pods_IronSourceDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41A16A94E98BBE58B03D2B3C /* Pods */ = {
+		6E72FC752F2B56F00048A100 = {
 			isa = PBXGroup;
 			children = (
-				94590F8252139A0026C27A04 /* Pods-IronSourceDemo.debug.xcconfig */,
-				B7DCA9F543ECDA91D2E102F1 /* Pods-IronSourceDemo.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		6E62FF292ED5757A00208E5A = {
-			isa = PBXGroup;
-			children = (
-				6E62FF342ED5757A00208E5A /* IronSourceDemo */,
-				6E62FF332ED5757A00208E5A /* Products */,
-				41A16A94E98BBE58B03D2B3C /* Pods */,
-				D9A93AD5C868D9D72ED98A1D /* Frameworks */,
+				6E72FC802F2B56F00048A100 /* DemoSoundCloud */,
+				6E72FC7F2F2B56F00048A100 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6E62FF332ED5757A00208E5A /* Products */ = {
+		6E72FC7F2F2B56F00048A100 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E62FF322ED5757A00208E5A /* IronSourceDemo.app */,
+				6E72FC7E2F2B56F00048A100 /* DemoSoundCloud.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D9A93AD5C868D9D72ED98A1D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CE57B68A59D320A1576369FF /* Pods_IronSourceDemo.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E62FF312ED5757A00208E5A /* IronSourceDemo */ = {
+		6E72FC7D2F2B56F00048A100 /* DemoSoundCloud */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E62FF452ED5757B00208E5A /* Build configuration list for PBXNativeTarget "IronSourceDemo" */;
+			buildConfigurationList = 6E72FC912F2B56F20048A100 /* Build configuration list for PBXNativeTarget "DemoSoundCloud" */;
 			buildPhases = (
-				FCAF783E690DC72DEC399FC3 /* [CP] Check Pods Manifest.lock */,
-				6E62FF2E2ED5757A00208E5A /* Sources */,
-				6E62FF2F2ED5757A00208E5A /* Frameworks */,
-				6E62FF302ED5757A00208E5A /* Resources */,
-				9CBF2C6F32699895273D9B5E /* [CP] Copy Pods Resources */,
+				6E72FC7A2F2B56F00048A100 /* Sources */,
+				6E72FC7B2F2B56F00048A100 /* Frameworks */,
+				6E72FC7C2F2B56F00048A100 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				6E62FF342ED5757A00208E5A /* IronSourceDemo */,
+				6E72FC802F2B56F00048A100 /* DemoSoundCloud */,
 			);
-			name = IronSourceDemo;
-			productName = IronSourceDemo;
-			productReference = 6E62FF322ED5757A00208E5A /* IronSourceDemo.app */;
+			name = DemoSoundCloud;
+			packageProductDependencies = (
+			);
+			productName = DemoSoundCloud;
+			productReference = 6E72FC7E2F2B56F00048A100 /* DemoSoundCloud.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6E62FF2A2ED5757A00208E5A /* Project object */ = {
+		6E72FC762F2B56F00048A100 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					6E62FF312ED5757A00208E5A = {
+					6E72FC7D2F2B56F00048A100 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = 6E62FF2D2ED5757A00208E5A /* Build configuration list for PBXProject "IronSourceDemo" */;
+			buildConfigurationList = 6E72FC792F2B56F00048A100 /* Build configuration list for PBXProject "DemoSoundCloud" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 6E62FF292ED5757A00208E5A;
+			mainGroup = 6E72FC752F2B56F00048A100;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 6E62FF332ED5757A00208E5A /* Products */;
+			productRefGroup = 6E72FC7F2F2B56F00048A100 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E62FF312ED5757A00208E5A /* IronSourceDemo */,
+				6E72FC7D2F2B56F00048A100 /* DemoSoundCloud */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6E62FF302ED5757A00208E5A /* Resources */ = {
+		6E72FC7C2F2B56F00048A100 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -154,50 +127,8 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		9CBF2C6F32699895273D9B5E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IronSourceDemo/Pods-IronSourceDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IronSourceDemo/Pods-IronSourceDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IronSourceDemo/Pods-IronSourceDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FCAF783E690DC72DEC399FC3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IronSourceDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		6E62FF2E2ED5757A00208E5A /* Sources */ = {
+		6E72FC7A2F2B56F00048A100 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,18 +138,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		6E62FF462ED5757B00208E5A /* Debug */ = {
+		6E72FC922F2B56F20048A100 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94590F8252139A0026C27A04 /* Pods-IronSourceDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 43LQ7M32DU;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				DEVELOPMENT_TEAM = H93KH7J7NB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = IronSourceDemo/Info.plist;
+				INFOPLIST_FILE = DemoSoundCloud/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -229,7 +158,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.sachinp01;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.sachin1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -237,18 +166,16 @@
 			};
 			name = Debug;
 		};
-		6E62FF472ED5757B00208E5A /* Release */ = {
+		6E72FC932F2B56F20048A100 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7DCA9F543ECDA91D2E102F1 /* Pods-IronSourceDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 43LQ7M32DU;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				DEVELOPMENT_TEAM = H93KH7J7NB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = IronSourceDemo/Info.plist;
+				INFOPLIST_FILE = DemoSoundCloud/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -259,7 +186,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.sachinp01;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.sachin1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -267,7 +194,7 @@
 			};
 			name = Release;
 		};
-		6E62FF482ED5757B00208E5A /* Debug */ = {
+		6E72FC942F2B56F20048A100 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -330,7 +257,7 @@
 			};
 			name = Debug;
 		};
-		6E62FF492ED5757B00208E5A /* Release */ = {
+		6E72FC952F2B56F20048A100 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -389,25 +316,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E62FF2D2ED5757A00208E5A /* Build configuration list for PBXProject "IronSourceDemo" */ = {
+		6E72FC792F2B56F00048A100 /* Build configuration list for PBXProject "DemoSoundCloud" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E62FF482ED5757B00208E5A /* Debug */,
-				6E62FF492ED5757B00208E5A /* Release */,
+				6E72FC942F2B56F20048A100 /* Debug */,
+				6E72FC952F2B56F20048A100 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E62FF452ED5757B00208E5A /* Build configuration list for PBXNativeTarget "IronSourceDemo" */ = {
+		6E72FC912F2B56F20048A100 /* Build configuration list for PBXNativeTarget "DemoSoundCloud" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E62FF462ED5757B00208E5A /* Debug */,
-				6E62FF472ED5757B00208E5A /* Release */,
+				6E72FC922F2B56F20048A100 /* Debug */,
+				6E72FC932F2B56F20048A100 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6E62FF2A2ED5757A00208E5A /* Project object */;
+	rootObject = 6E72FC762F2B56F00048A100 /* Project object */;
 }

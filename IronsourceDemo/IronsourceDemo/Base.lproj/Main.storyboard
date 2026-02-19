@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="veg-Kg-vX7">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -10,53 +9,115 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="gik-w4-LUb">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IronsourceDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="veg-Kg-vX7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DHV-EE-Mfa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExV-Km-b3u">
-                                <rect key="frame" x="146.66666666666666" y="698" width="100" height="100"/>
-                                <color key="backgroundColor" red="1" green="0.45882352939999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="0RJ-2N-t9n"/>
-                                    <constraint firstAttribute="height" constant="100" id="K17-pS-l6c"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Show"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUC-VG-rry">
+                                <rect key="frame" x="159" y="386" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="showIntAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ed-Cd-ceG"/>
+                                    <segue destination="pb0-dt-0uN" kind="push" id="ZGm-8x-5qQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LK-0Y-Bfq">
-                                <rect key="frame" x="146.66666666666666" y="376" width="100" height="100"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="TYd-cc-FXj"/>
-                                    <constraint firstAttribute="width" constant="100" id="evM-dQ-GFp"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Init Ad"/>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JiT-5I-yho"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Dz-dC-nKC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1468" y="-2"/>
+        </scene>
+        <!--ContainerVC-->
+        <scene sceneID="1ON-Kh-qZa">
+            <objects>
+                <viewController restorationIdentifier="ContainerVC" storyboardIdentifier="ContainerVC" id="pb0-dt-0uN" customClass="ContainerVC" customModule="IronSourceDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IMT-gm-D7F">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kBa-Pk-CGG">
+                                <rect key="frame" x="0.0" y="-10" width="393" height="842"/>
                                 <connections>
-                                    <action selector="initAds:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wy-g4-76b"/>
+                                    <segue destination="BYZ-38-t0r" kind="embed" id="bbF-oh-xel"/>
                                 </connections>
-                            </button>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="evh-v4-Ex5"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kBa-Pk-CGG" firstAttribute="top" secondItem="IMT-gm-D7F" secondAttribute="top" id="2Gt-FA-3eE"/>
+                            <constraint firstAttribute="bottom" secondItem="kBa-Pk-CGG" secondAttribute="bottom" id="ASm-fn-k45"/>
+                            <constraint firstItem="kBa-Pk-CGG" firstAttribute="leading" secondItem="evh-v4-Ex5" secondAttribute="leading" id="EPM-UX-3Mr"/>
+                            <constraint firstItem="evh-v4-Ex5" firstAttribute="trailing" secondItem="kBa-Pk-CGG" secondAttribute="trailing" id="Q6q-hv-5rc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ffT-Lg-Eyj"/>
+                    <connections>
+                        <outlet property="containerView" destination="IMT-gm-D7F" id="3zO-7f-UQK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Egd-fY-IWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-709.16030534351137" y="-27.464788732394368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController restorationIdentifier="ViewController" storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="IronSourceDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="B34-2i-SsL">
+                                <rect key="frame" x="141" y="358" width="111" height="126"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQU-w1-xQk">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="v8t-tL-Btd"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Show Interstitial"/>
+                                        <connections>
+                                            <action selector="buttonShowInterstitialTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NKG-nS-dWA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3f-mT-kr0">
+                                        <rect key="frame" x="0.0" y="76" width="111" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="eSf-S0-ant"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Show Rewarded"/>
+                                        <connections>
+                                            <action selector="buttonShowRewardedTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oFC-Qt-mg7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ExV-Km-b3u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CAw-45-AEr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ExV-Km-b3u" secondAttribute="bottom" constant="20" id="Opi-3f-zHu"/>
-                            <constraint firstItem="9LK-0Y-Bfq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rZV-Xk-Beb"/>
-                            <constraint firstItem="9LK-0Y-Bfq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uak-GP-u0P"/>
+                            <constraint firstItem="B34-2i-SsL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Q8m-hf-86e"/>
+                            <constraint firstItem="B34-2i-SsL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hc6-Q2-8Xy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonShowInterstitial" destination="FQU-w1-xQk" id="kKv-H3-ynR"/>
+                        <outlet property="buttonShowRewarded" destination="U3f-mT-kr0" id="XdW-SI-pl7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55" y="-34"/>
+            <point key="canvasLocation" x="44" y="-27"/>
         </scene>
     </scenes>
     <resources>
